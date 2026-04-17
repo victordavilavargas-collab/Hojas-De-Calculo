@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="11"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="sHeader">
+   <Font ss:Bold="1" ss:Color="#FFFFFF" ss:Size="12"/>
+   <Interior ss:Color="#1F4E78" ss:Pattern="Solid"/>
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="sSection">
+   <Font ss:Bold="1" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#2E75B6" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="sInput">
+   <Interior ss:Color="#FFF2CC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="sFormula">
+   <Interior ss:Color="#E2F0D9" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Diseño_E060">
+  <Table>
+   <Column ss:Width="340"/>
+   <Column ss:Width="150"/>
+   <Column ss:Width="90"/>
+
+   <Row><Cell ss:MergeAcross="2" ss:StyleID="sHeader"><Data ss:Type="String">Hoja de Cálculo - Momentos Últimos en Losa Aligerada (NTP E-060)</Data></Cell></Row>
+   <Row><Cell ss:MergeAcross="2"><Data ss:Type="String">Unidades SI: mm, MPa, kN/m, m, kN·m</Data></Cell></Row>
+   <Row/>
+
+   <Row><Cell ss:MergeAcross="2" ss:StyleID="sSection"><Data ss:Type="String">ENTRADAS GENERALES</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">f'c del concreto</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">28</Data></Cell><Cell><Data ss:Type="String">MPa</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">fy del acero corrugado</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">420</Data></Cell><Cell><Data ss:Type="String">MPa</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Es (módulo de elasticidad del acero)</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">200000</Data></Cell><Cell><Data ss:Type="String">MPa</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">ϕ (factor de reducción en flexión)</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">0.9</Data></Cell><Cell><Data ss:Type="String">-</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Luz de cálculo L</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">5</Data></Cell><Cell><Data ss:Type="String">m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">w_u carga última sobre PATÍN</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">18</Data></Cell><Cell><Data ss:Type="String">kN/m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">w_u carga última sobre ALMA</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">22</Data></Cell><Cell><Data ss:Type="String">kN/m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Ubicación de carga para diseño</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="String">Patín</Data></Cell><Cell><Data ss:Type="String">Patín o Alma</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Coeficiente momento positivo (ej. 1/8)</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">0.125</Data></Cell><Cell><Data ss:Type="String">-</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Coeficiente momento negativo (ej. 1/12)</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">0.0833333</Data></Cell><Cell><Data ss:Type="String">-</Data></Cell></Row>
+
+   <Row/>
+   <Row><Cell ss:MergeAcross="2" ss:StyleID="sSection"><Data ss:Type="String">GEOMETRÍA DE LOSA ALIGERADA</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Ancho efectivo de patín b_f</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">1000</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Espesor de patín h_f</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">50</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Ancho de vigueta/alma b_w</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">120</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Peralte total de losa h</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">250</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">d+ (peralte efectivo tracción inferior)</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">220</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">d- (peralte efectivo tracción superior)</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">35</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+
+   <Row/>
+   <Row><Cell ss:MergeAcross="2" ss:StyleID="sSection"><Data ss:Type="String">ACERO DE REFUERZO (MODIFICABLE)</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Área acero positivo As+</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">804</Data></Cell><Cell><Data ss:Type="String">mm²</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Área acero negativo As-</Data></Cell><Cell ss:StyleID="sInput"><Data ss:Type="Number">603</Data></Cell><Cell><Data ss:Type="String">mm²</Data></Cell></Row>
+
+   <Row/>
+   <Row><Cell ss:MergeAcross="2" ss:StyleID="sSection"><Data ss:Type="String">PARÁMETROS DERIVADOS Y MOMENTOS ÚLTIMOS</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">β1 (NTP E-060)</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=MAX(0.65,MIN(0.85,0.85-0.05*((R5C2-28)/7)))"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">-</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">w_u adoptada</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=IF(R12C2=&quot;Patín&quot;,R10C2,R11C2)"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">kN/m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">M_u positivo</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=R30C2*R9C2^2*R13C2"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">kN·m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">M_u negativo</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=R30C2*R9C2^2*R14C2"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">kN·m</Data></Cell></Row>
+
+   <Row/>
+   <Row><Cell ss:MergeAcross="2" ss:StyleID="sSection"><Data ss:Type="String">CAPACIDAD A FLEXIÓN - ACERO POSITIVO</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">a+ asumido rectangular (b_f)</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=R25C2*R6C2/(0.85*R5C2*R17C2)"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Caso de compresión para M+</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=IF(R35C2&lt;=R18C2,&quot;Compresión en Patín&quot;,&quot;Compresión en Patín+Alma&quot;)"><Data ss:Type="String">-</Data></Cell><Cell><Data ss:Type="String">-</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">a+ final</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=IF(R35C2&lt;=R18C2,R35C2,(R25C2*R6C2/(0.85*R5C2)-(R17C2-R19C2)*R18C2)/R19C2)"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Mn+</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=IF(R35C2&lt;=R18C2,R25C2*R6C2*(R21C2-R37C2/2)/1000000,((0.85*R5C2*R19C2*(R37C2-R18C2))*(R21C2-(R18C2+(R37C2-R18C2)/2))+(0.85*R5C2*R17C2*R18C2)*(R21C2-R18C2/2))/1000000)"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">kN·m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">ϕMn+</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=R8C2*R38C2"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">kN·m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Cumple positivo</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=IF(R39C2&gt;=R31C2,&quot;CUMPLE&quot;,&quot;NO CUMPLE&quot;)"><Data ss:Type="String">-</Data></Cell><Cell><Data ss:Type="String">-</Data></Cell></Row>
+
+   <Row/>
+   <Row><Cell ss:MergeAcross="2" ss:StyleID="sSection"><Data ss:Type="String">CAPACIDAD A FLEXIÓN - ACERO NEGATIVO</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">a- (compresión en alma b_w)</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=R26C2*R6C2/(0.85*R5C2*R19C2)"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">mm</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Mn-</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=R26C2*R6C2*(R22C2-R42C2/2)/1000000"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">kN·m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">ϕMn-</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=R8C2*R43C2"><Data ss:Type="Number">0</Data></Cell><Cell><Data ss:Type="String">kN·m</Data></Cell></Row>
+   <Row><Cell><Data ss:Type="String">Cumple negativo</Data></Cell><Cell ss:StyleID="sFormula" ss:Formula="=IF(R44C2&gt;=R32C2,&quot;CUMPLE&quot;,&quot;NO CUMPLE&quot;)"><Data ss:Type="String">-</Data></Cell><Cell><Data ss:Type="String">-</Data></Cell></Row>
+
+   <Row/>
+   <Row><Cell ss:MergeAcross="2"><Data ss:Type="String">Notas: editar celdas amarillas para cambiar materiales, geometría (patín/alma/vigueta) y áreas de acero. La hoja está en SI y plantea verificación de flexión en condición positiva y negativa para carga aplicada en patín o alma según selección. Complementar con verificaciones de cuantías mínimas/máximas, corte y servicio de la NTP E-060 en la memoria de cálculo.</Data></Cell></Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>4</SplitHorizontal>
+   <TopRowBottomPane>4</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane><Number>3</Number></Pane>
+    <Pane><Number>2</Number></Pane>
+   </Panes>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
